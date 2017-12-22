@@ -1,0 +1,13 @@
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\EmprestaGame.Business.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\EmprestaGame.Business.pdb
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\EmprestaGame.Data.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\Entities.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\EntityFramework.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\EmprestaGame.Data.pdb
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\EmprestaGame.Data.dll.config
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\Entities.pdb
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\bin\Debug\EntityFramework.xml
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\obj\Debug\EmprestaGame.Business.csprojResolveAssemblyReference.cache
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\obj\Debug\EmprestaGame.Business.csproj.CoreCompileInputs.cache
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\obj\Debug\EmprestaGame.Business.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\EmprestaGame.Business\obj\Debug\EmprestaGame.Business.pdb

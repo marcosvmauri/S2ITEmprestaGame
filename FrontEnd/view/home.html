@@ -1,0 +1,106 @@
+﻿<div ng-controller="HomeController">
+    <div cg-busy="{promise:promise,templateUrl:templateUrl,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+        <div class="wrapper" ng-init="iniciar()">
+            <header class="main-header" style="z-index: 1;">
+                <a href="#" class="logo">
+                    <span class="logo-mini">
+                </span>
+                    <span class="logo-lg">Empresta Game</span>
+                </a>
+                <nav class="navbar navbar-static-top">
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="/img/user.png" class="user-image" alt="User Image">
+                                    <span class="hidden-xs">{{usuarioLogado.nome}}</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="user-header">
+                                        <img src="/img/user.png" class="img-circle" alt="User Image">
+                                        <p>
+                                            {{usuarioLogado.nome}}
+                                            <small>Empresta Game</small>
+                                        </p>
+                                    </li>
+                                    <li class="user-body">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="user-footer">
+                                        <div class="pull-right">
+                                            <a ng-click="logoutClick()" class="btn btn-default btn-flat">Sair</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar" style="z-index: 0;">
+                <section class="sidebar">
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="/img/user.png" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="pull-left info">
+                            <p>{{usuarioLogado.login}}</p>
+                            <a>
+                                <i class="fa fa-circle text-success"></i> Online</a>
+                        </div>
+                    </div>
+                    <ul class="sidebar-menu" style="cursor: pointer;">
+                        <li id="menInicio" ui-sref="home.inicio" ui-sref-active="active">
+                            <a>
+                                <i class=" fa fa-home"></i>
+                                <span>Início</span>
+                            </a>
+                        </li>
+
+                        <li id="menJogo" ui-sref="home.jogo" ui-sref-active="active">
+                            <a>
+                                <i class="fa fa-list-ol"></i>
+                                <span>Meus Jogos</span>
+                            </a>
+                        </li>
+
+                        <li id="menJogosDiponiveis" ui-sref="home.jogosDisponiveis" ui-sref-active="active">
+                            <a>
+                                <i class="fa fa-list-ol"></i>
+                                <span>Jogos Disponíveis</span>
+                            </a>
+                        </li>
+
+                        <li id="menJogosEmprestimo" ui-sref="home.jogosEmprestados" ui-sref-active="active">
+                            <a>
+                                <i class="fa fa-list-ol"></i>
+                                <span>Jogos Emprestados</span>
+                            </a>
+                        </li>
+
+                        <li id="menADevolver" ui-sref="home.jogosADevolver" ui-sref-active="active">
+                            <a>
+                                <i class="fa fa-list-ol"></i>
+                                <span>Jogos a Devolver</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <div ui-view></div>
+
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>Versão 1.0</b> 
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>

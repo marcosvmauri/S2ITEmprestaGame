@@ -1,0 +1,25 @@
+<div id="custom-modal" ng-controller="PopupLoginController">
+  <div cg-busy="{promise:promise,templateUrl:templateUrl,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+    <div id="overlay">
+      <div class="box-header with-border">
+        <h3 class="box-title">Portal</h3>
+      </div>
+      <form ng-submit="formLoginSubmit()" name="formLoginSenha" novalidade class="form-horizontal">
+        <div class="box-body">
+          <div>
+            <p>A sessão do usuário expirou.</p>
+            <p>Digite novamente a senha para continuar utilizando o Portal.</p>
+          </div>
+          <div class="">
+            <input type="password" class="form-control" placeholder="senha" ng-model="senha" name="txtSenha" id="txtSenha" campo-obrigatorio/>
+          </div>
+        </div>
+        <div class="box-footer">
+          <button type="submit" class="btn btn-info pull-right">Entrar</button>
+          <button type="button" ng-click="fechar()" class="btn btn-default">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="fade"></div>
+</div>

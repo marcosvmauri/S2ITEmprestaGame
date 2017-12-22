@@ -1,0 +1,96 @@
+<div id="divConteudo" class="content-wrapper" ng-controller="UsuarioController" ng-init="iniciar()">
+    <div cg-busy="{promise:promise,templateUrl:templateUrl,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+        <section class="content-header">
+            <h1>
+                Sistema para empréstimo de jogos
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href=""><i class="fa fa-list-ul"></i> Usuário</a></li>
+            </ol>
+        </section>
+        <section class="content">
+            <div class="row">
+                <div class="col-md-12" ng-show="telaAtual == 'Lista'">
+                    <div class="box box-primary">
+                        <div class="box-header">
+                            <h3 class="box-title">Todos usuários</h3>
+                            <div class="pull-right" style="display: flex;">
+                                <button type="button" ng-click="btnNovoClick()" class="btn btn-block btn-primary" style="margin-right: 10px;width: 75px;">Novo</button>
+                                <input type="text" ng-model="pesquisarUsuario" style="width:150px;" class="form-control pull-right" placeholder="Pesquisar">
+                            </div>
+                        </div>
+
+                        <md-table-container>
+                            <table md-table md-progress="promise">
+                                <thead md-head md-order="id">
+                                    <tr md-row>
+                                        <th md-column md-order-by="id"><span>Id</span></th>
+                                        <th md-column md-order-by="login"><span>Login</span></th>
+                                        <th md-column md-order-by="nome"><span>Nome</span></th>
+                                        <th md-column style="width: 10%;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody md-body>
+                                    <tr md-row ng-repeat="usuario in listaUsuario | filter: pesquisarUsuario | orderBy: id | limitTo: paginacao.limite : (paginacao.pagina -1) * paginacao.limite">
+                                        <td md-cell>{{usuario.id}}</td>
+                                        <td md-cell>{{usuario.login}}</td>
+                                        <td md-cell>{{usuario.nome}}</td>
+                                        <td md-cell><button type="button" ng-click="editarUsuarioClick(usuario)" class="btn btn-block btn-primary btn-xs">Editar</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </md-table-container>
+                        <md-table-pagination md-limit="paginacao.limite" md-page="paginacao.pagina" md-total="{{listaUsuario.length}}" md-boundary-links="true"></md-table-pagination>
+                    </div>
+                </div>
+                <div class="col-md-12" ng-show="telaAtual == 'Detalhe'">
+                    <form ng-submit="formSubmit()" id="form" name="form" novalidate>
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <h3 class="box-title">{{tituloDetalharUsuario}}</h3>
+                            </div>
+                            <div class="box-body pad table-responsive">
+                                <div class="form-group col-md-2" id='div_cam_id'>
+                                    <label>Id</label>
+                                    <input type="text" ng-model="usuarioSelecionado.id" class="form-control campo-align-direita" id='cam_id' readonly='true'>
+                                </div>
+                                <div class="form-group col-md-6" id="div_cam_nome">
+                                    <label>* Nome</label>
+                                    <input type="text" campo-obrigatorio required ng-model="usuarioSelecionado.nome" class="form-control campo-align-esquerda" id="cam_nome" maxlength="100">
+                                </div>
+                                <div class="form-group col-md-4" id="div_cam_login">
+                                    <label>* Login</label>
+                                    <input type="text" campo-obrigatorio required ng-model="usuarioSelecionado.login" class="form-control campo-align-esquerda" id="cam_login" maxlength="50">
+                                </div>
+                                <div class="form-group col-md-4" id='div_cam_id'>
+                                    <label>Senha</label>
+                                    <input type="password" ng-model="usuarioSelecionado.senha" class="form-control campo-align-direita" id='cam_senha'>
+                                </div>
+                                <small class="form-group col-md-12">* Campo Obrigatório</small>
+                            </div>
+                            <div class="box-footer">
+                                <button type="submit" id="btn_salvar" class="btn btn-primary">Salvar</button>
+                                <button type="button" id="btn_excluir" ng-if="usuarioSelecionado.id > 0" ng-click="btnExcluirClick()" class="btn btn-danger">Excluir</button>
+                                <button type="button" ng-click="btnVoltarClick()" class="btn btn-default pull-right">Voltar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-12" ng-show="telaAtual == 'Excluir'">
+                    <div class="box box-primary">
+                        <div class="box-header">
+                            <h3 class="box-title">Excluir usuario</h3>
+                        </div>
+                        <div class="box-body">
+                            <p>Deseja realmente excluir o usuario <b>{{usuarioSelecionado.login }} - {{usuarioSelecionado.nome}}</b> ?
+                        </div>
+                        <div class="box-footer">
+                            <button type="button" ng-click="btnExcluirUsuarioClick()" class="btn btn-primary">Confirmar</button>
+                            <button type="button" ng-click="btnVoltarExcluirClick()" class="btn btn-default pull-right">Voltar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

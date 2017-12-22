@@ -1,0 +1,8 @@
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\bin\Debug\DTO.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\bin\Debug\DTO.pdb
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\obj\Debug\DTO.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\obj\Debug\DTO.pdb
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\bin\Debug\AutoMapper.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\bin\Debug\AutoMapper.xml

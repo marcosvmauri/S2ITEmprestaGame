@@ -1,0 +1,8 @@
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\bin\Debug\EmprestaGame.DTO.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\bin\Debug\EmprestaGame.DTO.pdb
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\bin\Debug\AutoMapper.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\bin\Debug\AutoMapper.xml
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\obj\Debug\EmprestaGame.DTO.csproj.CoreCompileInputs.cache
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\obj\Debug\EmprestaGame.DTO.dll
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\obj\Debug\EmprestaGame.DTO.pdb
+E:\Marcos\Documentos\Desenvolvimento\AvaliacaoS2IT\BackEnd\DTO\obj\Debug\EmprestaGame.DTO.csprojResolveAssemblyReference.cache
